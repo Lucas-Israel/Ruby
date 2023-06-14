@@ -26,6 +26,18 @@ class Vehicle
   def to_s
     "Wheels: #{@wheels}, HorsePower: #{@horsepower}"
   end
+
+  def private_this
+    puts 'this is private'
+  end
+
+  private :private_this
+
+  def protect_this
+    puts 'this is protected'
+  end
+
+  protected :protect_this
 end
 
 abc = Vehicle.new(4, 200, 'abc', 5)
@@ -35,3 +47,8 @@ puts abc.test()
 puts ddef.multiply_wheels(2)
 puts abc.another_test('esse é outro teste')
 puts abc
+
+# chamando private e protected methods
+
+abc.private_this
+abc.protect_this
