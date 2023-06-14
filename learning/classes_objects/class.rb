@@ -20,6 +20,12 @@ class Vehicle
   def another_test(string)
     return "another test: #{string}"
   end
+
+  # metodo para mandar pro print
+
+  def to_s
+    "Wheels: #{@wheels}, HorsePower: #{@horsepower}"
+  end
 end
 
 abc = Vehicle.new(4, 200, 'abc', 5)
@@ -28,3 +34,4 @@ ddef = Vehicle.new(2, 500, 'def', 1)
 puts abc.test()
 puts ddef.multiply_wheels(2)
 puts abc.another_test('esse é outro teste')
+puts abc
