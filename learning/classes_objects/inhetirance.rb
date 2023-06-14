@@ -10,6 +10,8 @@ class Square
 
 end
 
+# inheritance indicando com "<" seguido do nome da classe a ser herdada
+
 class Box < Square
 
   def initialize(w, h, d)
