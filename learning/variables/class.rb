@@ -27,3 +27,5 @@ puts a.how_many_instances
 b = Class1.new('Baldo', 30)
 
 puts b.how_many_instances
+
+c = Class1.new('Caldo', 40)
